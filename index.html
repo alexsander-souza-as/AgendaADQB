@@ -7,25 +7,25 @@
     <link rel="preload" href="https://media.bio.site/public/library/fonts/open-sans.ttf" as="font" type="font/woff2"
         crossorigin="anonymous">
     <style>
-        /* ...seu CSS atual... */
+  /* ...seu CSS atual... */
 
-        /* Esconde o rodapé/CTA do Bio Site (banner "Crie um site...") */
-        footer.cta_footer,
-        #signup_banner,
-        [id*="signup"],
-        [class*="signup"],
-        [class*="cta"],
-        [class*="watermark"],
-        [data-cy*="watermark"] {
-            display: none !important;
-            visibility: hidden !important;
-            height: 0 !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            overflow: hidden !important;
-        }
-    </style>
-    <style>
+  /* Esconde o rodapé/CTA do Bio Site (banner "Crie um site...") */
+  footer.cta_footer,
+  #signup_banner,
+  [id*="signup"],
+  [class*="signup"],
+  [class*="cta"],
+  [class*="watermark"],
+  [data-cy*="watermark"] {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      overflow: hidden !important;
+  }
+</style>
+<style>
         @font-face {
             font-family: 'Open Sans';
             font-style: normal;
@@ -274,7 +274,7 @@
                             <div class="BioSite-components-BodySections-Links-Layouts-Cards-Cards__overlay--Bo4dD">
                                 <img class="BioSite-components-BodySections-Links-Layouts-Cards-Cards__thumbnail--QCaO3"
                                     alt="02 - BORDA DO CAMPO thumbnail"
-                                    src="https://media.bio.site/sites/bc35af4a-66b0-4b49-8f96-6b85f296168b/L5nVg5mN5XN3kjFKM2JicX.jpg">
+                                    src="https://media.bio.site/sites/bc35af4a-66b0-4b49-8f96-6b85f296168b/xasDBJkQWdhUSZf64WirKb.jpg">
                             </div>
                             <div
                                 class="BioSite-components-BodySections-Links-Layouts-Cards-Cards__textContainer--ivNyW">
@@ -631,6 +631,44 @@
     </div>
     <script defer="defer" src="https://media.bio.site/biosite/runtime-biosite.js"></script>
     <script defer="defer" src="https://media.bio.site/biosite/biosite.bundle.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 <script>
     window.initial_state = {
@@ -701,7 +739,7 @@
                     "url": "https:\u002F\u002Fborda-do-campo.netlify.app\u002F",
                     "url_validated": false,
                     "name": "02 - BORDA DO CAMPO",
-                    "thumbnail_url": "https:\u002F\u002Fmedia.bio.site\u002Fsites\u002Fbc35af4a-66b0-4b49-8f96-6b85f296168b\u002FL5nVg5mN5XN3kjFKM2JicX.jpg"
+                    "thumbnail_url": "https:\u002F\u002Fmedia.bio.site\u002Fsites\u002Fbc35af4a-66b0-4b49-8f96-6b85f296168b\u002FxasDBJkQWdhUSZf64WirKb.jpg"
                 }, {
                     "id": "daf52202-b62b-4b20-920d-a963e92af429",
                     "url": "https:\u002F\u002Fflorestal.netlify.app\u002F",
@@ -830,7 +868,7 @@
             "visibility": "public",
             "custom_handle": true,
             "created_at": 1728947610,
-            "last_updated_at": 1769448094
+            "last_updated_at": 1769449169
         },
         "commerce": {
             "stripe_store_status": "NOT_STARTED",
